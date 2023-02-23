@@ -30,7 +30,6 @@ extension LocalImageDataLoader: ImageDataCache {
 }
 
 extension LocalImageDataLoader: ImageDataLoader {
-    
     public enum LoadError: Error {
         case invalidURL
         case failed

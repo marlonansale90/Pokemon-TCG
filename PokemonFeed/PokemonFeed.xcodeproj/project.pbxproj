@@ -175,6 +175,9 @@
 		A9005266299E97A100A47325 /* DeckDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005265299E97A100A47325 /* DeckDetailPresenterTests.swift */; };
 		A9005268299EA2E400A47325 /* SaveCardCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005267299EA2E400A47325 /* SaveCardCache.swift */; };
 		A91F0C9F299BEA760090FDAE /* Decks.strings in Resources */ = {isa = PBXBuildFile; fileRef = A91F0CA1299BEA760090FDAE /* Decks.strings */; };
+		A92D33C929A669C600B5AD0B /* SearchCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92D33C829A669C600B5AD0B /* SearchCardViewModel.swift */; };
+		A92D33CB29A6735700B5AD0B /* SearchCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92D33CA29A6735700B5AD0B /* SearchCardPresenter.swift */; };
+		A92D33CE29A76B9500B5AD0B /* SearchCard.strings in Resources */ = {isa = PBXBuildFile; fileRef = A92D33D029A76B9500B5AD0B /* SearchCard.strings */; };
 		A9313C36299D48660006602D /* SaveCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C35299D48660006602D /* SaveCardController.swift */; };
 		A9313C38299D4A7A0006602D /* SaveCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C37299D4A7A0006602D /* SaveCardViewModel.swift */; };
 		A9313C3A299D4CD80006602D /* DeckDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */; };
@@ -375,6 +378,10 @@
 		A9005267299EA2E400A47325 /* SaveCardCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardCache.swift; sourceTree = "<group>"; };
 		A91F0CA0299BEA760090FDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Decks.strings; sourceTree = "<group>"; };
 		A91F0CA2299BEA7C0090FDAE /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Decks.strings; sourceTree = "<group>"; };
+		A92D33C829A669C600B5AD0B /* SearchCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardViewModel.swift; sourceTree = "<group>"; };
+		A92D33CA29A6735700B5AD0B /* SearchCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardPresenter.swift; sourceTree = "<group>"; };
+		A92D33CF29A76B9500B5AD0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchCard.strings; sourceTree = "<group>"; };
+		A92D33D129A76B9800B5AD0B /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/SearchCard.strings; sourceTree = "<group>"; };
 		A9313C35299D48660006602D /* SaveCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardController.swift; sourceTree = "<group>"; };
 		A9313C37299D4A7A0006602D /* SaveCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardViewModel.swift; sourceTree = "<group>"; };
 		A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDetailPresenter.swift; sourceTree = "<group>"; };
@@ -768,7 +775,7 @@
 		8EA9B90929648B36005E6080 /* PokemonFeed */ = {
 			isa = PBXGroup;
 			children = (
-				A93E49D5299F9CAD00FC93EE /* New Group */,
+				A93E49D5299F9CAD00FC93EE /* Search */,
 				8EB567EF298C88B10004746B /* Decks */,
 				8EE3DDB32981AE4600DBF2C0 /* Helpers */,
 				8EE3DDA6298186B800DBF2C0 /* CardDetail */,
@@ -1418,6 +1425,23 @@
 			path = snapshots;
 			sourceTree = "<group>";
 		};
+		A92D33C629A6695E00B5AD0B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A92D33C729A669A900B5AD0B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A92D33C829A669C600B5AD0B /* SearchCardViewModel.swift */,
+				A92D33CA29A6735700B5AD0B /* SearchCardPresenter.swift */,
+				A92D33D029A76B9500B5AD0B /* SearchCard.strings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		A9313C2D299D31410006602D /* Search Card UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,11 +1473,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A93E49D5299F9CAD00FC93EE /* New Group */ = {
+		A93E49D5299F9CAD00FC93EE /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A92D33C729A669A900B5AD0B /* Presentation */,
+				A92D33C629A6695E00B5AD0B /* Domain */,
 			);
-			path = "New Group";
+			path = Search;
 			sourceTree = "<group>";
 		};
 		A94889BD29954FCA008929E5 /* Deck New UI */ = {
@@ -1637,6 +1663,7 @@
 			files = (
 				8EA9B96A2964B843005E6080 /* BoosterSets.strings in Resources */,
 				A91F0C9F299BEA760090FDAE /* Decks.strings in Resources */,
+				A92D33CE29A76B9500B5AD0B /* SearchCard.strings in Resources */,
 				8EA9B97B2964C7DB005E6080 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1690,6 +1717,7 @@
 				8EA9B9482964B4AF005E6080 /* BoosterSetsEndPoint.swift in Sources */,
 				8EFE7B8D2969E308003AF320 /* CardStore.swift in Sources */,
 				8E0A6CD82965C27500F79B35 /* CoreData+Helpers.swift in Sources */,
+				A92D33C929A669C600B5AD0B /* SearchCardViewModel.swift in Sources */,
 				8E1AA7E32968DA6D001E05A9 /* CoreDataStore.swift in Sources */,
 				8EA9B9432964B006005E6080 /* BoosterSet.swift in Sources */,
 				8E0A6CCB2965B2F900F79B35 /* LocalBoosterSet.swift in Sources */,
@@ -1733,6 +1761,7 @@
 				8E0A6CCD2965B50300F79B35 /* LocalBoosterSetLoader.swift in Sources */,
 				8EB567EA298C87B50004746B /* SaveCard.swift in Sources */,
 				8E2C0D5F2974A3360079329F /* Paginated.swift in Sources */,
+				A92D33CB29A6735700B5AD0B /* SearchCardPresenter.swift in Sources */,
 				8EFE7B9E296A1E57003AF320 /* CoreDataCardStore+CardStore.swift in Sources */,
 				8E4F6A4F29679EBE0022403A /* CardsPresenter.swift in Sources */,
 				8ED5CF1F298DC9A900AD5FE6 /* CoreDataDeckStore+DeckStore.swift in Sources */,
@@ -1904,6 +1933,15 @@
 				A91F0CA2299BEA7C0090FDAE /* fil */,
 			);
 			name = Decks.strings;
+			sourceTree = "<group>";
+		};
+		A92D33D029A76B9500B5AD0B /* SearchCard.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92D33CF29A76B9500B5AD0B /* en */,
+				A92D33D129A76B9800B5AD0B /* fil */,
+			);
+			name = SearchCard.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
