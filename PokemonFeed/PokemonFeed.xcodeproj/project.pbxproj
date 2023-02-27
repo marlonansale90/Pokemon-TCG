@@ -182,6 +182,7 @@
 		A9313C38299D4A7A0006602D /* SaveCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C37299D4A7A0006602D /* SaveCardViewModel.swift */; };
 		A9313C3A299D4CD80006602D /* DeckDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */; };
 		A93E49D4299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93E49D3299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift */; };
+		A944348829ACB84F00BAF2F1 /* SearchCardEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A944348729ACB84F00BAF2F1 /* SearchCardEndPoint.swift */; };
 		A94889C129955015008929E5 /* DeckNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94889C029955015008929E5 /* DeckNewView.swift */; };
 		A96194A8299A98CB0041A94D /* DeckNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194A7299A98CB0041A94D /* DeckNewViewController.swift */; };
 		A96194AC299AA58A0041A94D /* LocalCard+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */; };
@@ -386,6 +387,7 @@
 		A9313C37299D4A7A0006602D /* SaveCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardViewModel.swift; sourceTree = "<group>"; };
 		A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDetailPresenter.swift; sourceTree = "<group>"; };
 		A93E49D3299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStore+SaveCardStore.swift"; sourceTree = "<group>"; };
+		A944348729ACB84F00BAF2F1 /* SearchCardEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardEndPoint.swift; sourceTree = "<group>"; };
 		A94889C029955015008929E5 /* DeckNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewView.swift; sourceTree = "<group>"; };
 		A96194A7299A98CB0041A94D /* DeckNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewViewController.swift; sourceTree = "<group>"; };
 		A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalCard+Helpers.swift"; sourceTree = "<group>"; };
@@ -1428,6 +1430,7 @@
 		A92D33C629A6695E00B5AD0B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A944348729ACB84F00BAF2F1 /* SearchCardEndPoint.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -1445,6 +1448,8 @@
 		A9313C2D299D31410006602D /* Search Card UI */ = {
 			isa = PBXGroup;
 			children = (
+				A944348A29ACBD1F00BAF2F1 /* Views */,
+				A944348929ACBD1300BAF2F1 /* ViewControllers */,
 			);
 			path = "Search Card UI";
 			sourceTree = "<group>";
@@ -1476,10 +1481,32 @@
 		A93E49D5299F9CAD00FC93EE /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A944348629ACB1E500BAF2F1 /* API */,
 				A92D33C729A669A900B5AD0B /* Presentation */,
 				A92D33C629A6695E00B5AD0B /* Domain */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		A944348629ACB1E500BAF2F1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A944348929ACBD1300BAF2F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A944348A29ACBD1F00BAF2F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A94889BD29954FCA008929E5 /* Deck New UI */ = {
@@ -1715,6 +1742,7 @@
 			files = (
 				8EA9B9AE2964E30A005E6080 /* BoosterSetPresenter.swift in Sources */,
 				8EA9B9482964B4AF005E6080 /* BoosterSetsEndPoint.swift in Sources */,
+				A944348829ACB84F00BAF2F1 /* SearchCardEndPoint.swift in Sources */,
 				8EFE7B8D2969E308003AF320 /* CardStore.swift in Sources */,
 				8E0A6CD82965C27500F79B35 /* CoreData+Helpers.swift in Sources */,
 				A92D33C929A669C600B5AD0B /* SearchCardViewModel.swift in Sources */,
