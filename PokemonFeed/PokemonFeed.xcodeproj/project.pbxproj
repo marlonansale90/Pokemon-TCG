@@ -186,6 +186,8 @@
 		A94889C129955015008929E5 /* DeckNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94889C029955015008929E5 /* DeckNewView.swift */; };
 		A96194A8299A98CB0041A94D /* DeckNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194A7299A98CB0041A94D /* DeckNewViewController.swift */; };
 		A96194AC299AA58A0041A94D /* LocalCard+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */; };
+		A9A691E429B74FD2004BFC90 /* SearchCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A691E329B74FD2004BFC90 /* SearchCardController.swift */; };
+		A9A691E629B77021004BFC90 /* SearchCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A691E529B77021004BFC90 /* SearchCardCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -391,6 +393,8 @@
 		A94889C029955015008929E5 /* DeckNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewView.swift; sourceTree = "<group>"; };
 		A96194A7299A98CB0041A94D /* DeckNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewViewController.swift; sourceTree = "<group>"; };
 		A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalCard+Helpers.swift"; sourceTree = "<group>"; };
+		A9A691E329B74FD2004BFC90 /* SearchCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardController.swift; sourceTree = "<group>"; };
+		A9A691E529B77021004BFC90 /* SearchCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1498,6 +1502,7 @@
 		A944348929ACBD1300BAF2F1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A9A691E329B74FD2004BFC90 /* SearchCardController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1505,6 +1510,7 @@
 		A944348A29ACBD1F00BAF2F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9A691E529B77021004BFC90 /* SearchCardCollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1876,6 +1882,7 @@
 				8EFE7BA0296B1C13003AF320 /* UIRefreshControl+Helpers.swift in Sources */,
 				8E56CE8129679B1A00FFCD15 /* CollectionListViewController.swift in Sources */,
 				A94889C129955015008929E5 /* DeckNewView.swift in Sources */,
+				A9A691E629B77021004BFC90 /* SearchCardCollectionCell.swift in Sources */,
 				8EA9B99B2964D4BA005E6080 /* BoosterSetCell.swift in Sources */,
 				8EFE7BBD296B9571003AF320 /* ErrorView.swift in Sources */,
 				8E0A6CFB2965E68500F79B35 /* UIImageView+Animations.swift in Sources */,
@@ -1884,6 +1891,7 @@
 				8EE3DDAB2981894500DBF2C0 /* CardDetailViewController.swift in Sources */,
 				8E0A6D222967837F00F79B35 /* UIView+Shimmering.swift in Sources */,
 				8E0678972970676E00E71A2B /* ErrorCollectionReusableView.swift in Sources */,
+				A9A691E429B74FD2004BFC90 /* SearchCardController.swift in Sources */,
 				8EB567FF298CFF480004746B /* DeckCell.swift in Sources */,
 				8EA9B9A82964E048005E6080 /* BoosterSetController.swift in Sources */,
 				8EB567E5298C82BA0004746B /* DeckController.swift in Sources */,
