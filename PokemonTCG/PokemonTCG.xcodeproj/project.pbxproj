@@ -230,6 +230,7 @@
 		8EA9B9BE2964EA84005E6080 /* PokemonTCG */ = {
 			isa = PBXGroup;
 			children = (
+				A9A691E729B774A4004BFC90 /* SearchCards */,
 				A9313C2C299D276B0006602D /* DeckDetail */,
 				8EE2F3802991B6C6009080EC /* Deck */,
 				8EE3DDAE2981A32900DBF2C0 /* CardDetail */,
@@ -317,6 +318,13 @@
 				A9313C31299D42FB0006602D /* DeckDetailUIComposer.swift */,
 			);
 			path = DeckDetail;
+			sourceTree = "<group>";
+		};
+		A9A691E729B774A4004BFC90 /* SearchCards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchCards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
