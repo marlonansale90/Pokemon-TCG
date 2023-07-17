@@ -34,8 +34,6 @@
 		8EA9B9C92964EA86005E6080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9B9C82964EA86005E6080 /* Assets.xcassets */; };
 		8EA9B9CC2964EA86005E6080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9B9CA2964EA86005E6080 /* LaunchScreen.storyboard */; };
 		8EA9B9D72964EA86005E6080 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9B9D62964EA86005E6080 /* SceneDelegateTests.swift */; };
-		8EA9B9F22964EB1C005E6080 /* PokemonFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA9B9F02964EB1C005E6080 /* PokemonFeed.framework */; };
-		8EA9B9F32964EB1C005E6080 /* PokemonFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA9B9F02964EB1C005E6080 /* PokemonFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8EA9B9F42964EB1C005E6080 /* PokemoniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA9B9F12964EB1C005E6080 /* PokemoniOS.framework */; };
 		8EA9B9F52964EB1C005E6080 /* PokemoniOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA9B9F12964EB1C005E6080 /* PokemoniOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8EBEA6962964F0B8000F1FC8 /* BoosterSetsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBEA6952964F0B8000F1FC8 /* BoosterSetsUIComposer.swift */; };
@@ -46,6 +44,8 @@
 		8EE3DDB72981F51A00DBF2C0 /* CardListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DDB62981F51A00DBF2C0 /* CardListViewAdapter.swift */; };
 		8EE3DDB929829B8900DBF2C0 /* Search+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DDB829829B8900DBF2C0 /* Search+Helpers.swift */; };
 		8EFE7BAF296B8CB4003AF320 /* DispatchQueue+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE7BAE296B8CB4003AF320 /* DispatchQueue+Helpers.swift */; };
+		A94200922A1CD25E00B47DA2 /* PokemonFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94200912A1CD25E00B47DA2 /* PokemonFeed.framework */; };
+		A94200932A1CD25E00B47DA2 /* PokemonFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A94200912A1CD25E00B47DA2 /* PokemonFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A94200932A1CD25E00B47DA2 /* PokemonFeed.framework in Embed Frameworks */,
 				8EA9B9F52964EB1C005E6080 /* PokemoniOS.framework in Embed Frameworks */,
-				8EA9B9F32964EB1C005E6080 /* PokemonFeed.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +114,7 @@
 		8EE3DDB62981F51A00DBF2C0 /* CardListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewAdapter.swift; sourceTree = "<group>"; };
 		8EE3DDB829829B8900DBF2C0 /* Search+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+Helpers.swift"; sourceTree = "<group>"; };
 		8EFE7BAE296B8CB4003AF320 /* DispatchQueue+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Helpers.swift"; sourceTree = "<group>"; };
+		A94200912A1CD25E00B47DA2 /* PokemonFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PokemonFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94200922A1CD25E00B47DA2 /* PokemonFeed.framework in Frameworks */,
 				8EA9B9F42964EB1C005E6080 /* PokemoniOS.framework in Frameworks */,
-				8EA9B9F22964EB1C005E6080 /* PokemonFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +253,7 @@
 		8EA9B9EF2964EB1B005E6080 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A94200912A1CD25E00B47DA2 /* PokemonFeed.framework */,
 				8EA9B9F02964EB1C005E6080 /* PokemonFeed.framework */,
 				8EA9B9F12964EB1C005E6080 /* PokemoniOS.framework */,
 			);
