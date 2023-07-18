@@ -174,6 +174,9 @@
 		A9005264299E8FDA00A47325 /* SaveCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005263299E8FDA00A47325 /* SaveCardStore.swift */; };
 		A9005266299E97A100A47325 /* DeckDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005265299E97A100A47325 /* DeckDetailPresenterTests.swift */; };
 		A9005268299EA2E400A47325 /* SaveCardCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005267299EA2E400A47325 /* SaveCardCache.swift */; };
+		A90912722A6696EE0078C629 /* SearchCards.strings in Resources */ = {isa = PBXBuildFile; fileRef = A90912712A6696EE0078C629 /* SearchCards.strings */; };
+		A90912742A6697450078C629 /* SearchCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90912732A6697450078C629 /* SearchCardsPresenter.swift */; };
+		A90912792A66A6B20078C629 /* SearchCardsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90912782A66A6B20078C629 /* SearchCardsEndPoint.swift */; };
 		A91F0C9F299BEA760090FDAE /* Decks.strings in Resources */ = {isa = PBXBuildFile; fileRef = A91F0CA1299BEA760090FDAE /* Decks.strings */; };
 		A9313C36299D48660006602D /* SaveCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C35299D48660006602D /* SaveCardController.swift */; };
 		A9313C38299D4A7A0006602D /* SaveCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C37299D4A7A0006602D /* SaveCardViewModel.swift */; };
@@ -373,6 +376,9 @@
 		A9005263299E8FDA00A47325 /* SaveCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardStore.swift; sourceTree = "<group>"; };
 		A9005265299E97A100A47325 /* DeckDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDetailPresenterTests.swift; sourceTree = "<group>"; };
 		A9005267299EA2E400A47325 /* SaveCardCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardCache.swift; sourceTree = "<group>"; };
+		A90912712A6696EE0078C629 /* SearchCards.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = SearchCards.strings; sourceTree = "<group>"; };
+		A90912732A6697450078C629 /* SearchCardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsPresenter.swift; sourceTree = "<group>"; };
+		A90912782A66A6B20078C629 /* SearchCardsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsEndPoint.swift; sourceTree = "<group>"; };
 		A91F0CA0299BEA760090FDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Decks.strings; sourceTree = "<group>"; };
 		A91F0CA2299BEA7C0090FDAE /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Decks.strings; sourceTree = "<group>"; };
 		A9313C35299D48660006602D /* SaveCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCardController.swift; sourceTree = "<group>"; };
@@ -1421,6 +1427,7 @@
 		A909126F2A66876C0078C629 /* SearchCards */ = {
 			isa = PBXGroup;
 			children = (
+				A909127A2A66A7640078C629 /* API */,
 				A90912702A6687850078C629 /* Presentation */,
 			);
 			path = SearchCards;
@@ -1429,8 +1436,18 @@
 		A90912702A6687850078C629 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A90912712A6696EE0078C629 /* SearchCards.strings */,
+				A90912732A6697450078C629 /* SearchCardsPresenter.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A909127A2A66A7640078C629 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A90912782A66A6B20078C629 /* SearchCardsEndPoint.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		A9313C2D299D31410006602D /* Search Card UI */ = {
@@ -1645,6 +1662,7 @@
 			files = (
 				8EA9B96A2964B843005E6080 /* BoosterSets.strings in Resources */,
 				A91F0C9F299BEA760090FDAE /* Decks.strings in Resources */,
+				A90912722A6696EE0078C629 /* SearchCards.strings in Resources */,
 				8EA9B97B2964C7DB005E6080 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1732,12 +1750,14 @@
 				8EA9B9782964C796005E6080 /* LoadResourcePresenter.swift in Sources */,
 				8E4F6A552967A5270022403A /* CardPresenter.swift in Sources */,
 				8EFE7B892969D8B7003AF320 /* LocalCard.swift in Sources */,
+				A90912792A66A6B20078C629 /* SearchCardsEndPoint.swift in Sources */,
 				8E0A6D0829662D0B00F79B35 /* CardMapper.swift in Sources */,
 				8E0A6D0C2966351100F79B35 /* CardEndPoint.swift in Sources */,
 				8E0A6CC52965B11600F79B35 /* CoreDataBoosterSetStore.swift in Sources */,
 				8EE3DDA9298186D100DBF2C0 /* CardDetailViewModel.swift in Sources */,
 				8EE3DDB22981AC4A00DBF2C0 /* CardDetailPresenter.swift in Sources */,
 				8E0A6CC32965B05A00F79B35 /* BoosterSetStore.xcdatamodeld in Sources */,
+				A90912742A6697450078C629 /* SearchCardsPresenter.swift in Sources */,
 				8E0A6CCD2965B50300F79B35 /* LocalBoosterSetLoader.swift in Sources */,
 				8EB567EA298C87B50004746B /* SaveCard.swift in Sources */,
 				8E2C0D5F2974A3360079329F /* Paginated.swift in Sources */,

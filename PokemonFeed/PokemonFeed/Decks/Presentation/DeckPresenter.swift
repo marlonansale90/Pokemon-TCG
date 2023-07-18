@@ -24,4 +24,3 @@ public final class DeckPresenter {
         DecksViewModel(decks: decks)
     }
 }
-
