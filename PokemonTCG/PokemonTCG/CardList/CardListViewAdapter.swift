@@ -38,15 +38,11 @@ final class CardListViewAdapter: ResourceView {
             .removeDuplicates()
             .sink { [weak self] search in
                 guard let self = self else { return }
-                let filterCards = viewModel.cards.filter {  $0.name.lowercased().contains(search.lowercased())}
+                let filterCards = viewModel.cards.filter {  $0.name.lowercased().contains(search.lowercased()) }
                 let searchViewControllers = self.toCollectionController(with: filterCards, priceFormatter: self.priceFormatter)
                 let finalViewControllers = !searchViewControllers.isEmpty ? searchViewControllers: viewControllers
                 self.controller?.display(finalViewControllers)
             }
-    }
-    
-    deinit {
-        cancellable?.cancel()
     }
     
     private func toCollectionController(with cards: [Card], priceFormatter: NumberFormatter) -> [CollectionController] {

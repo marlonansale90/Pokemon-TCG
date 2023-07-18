@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class CardsPresenter {
+public enum CardsPresenter {
     public static func map(_ cards: [Card]) -> CardsViewModel {
         CardsViewModel(cards: cards)
     }
