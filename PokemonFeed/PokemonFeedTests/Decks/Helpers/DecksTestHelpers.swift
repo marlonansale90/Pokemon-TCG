@@ -8,8 +8,9 @@
 import Foundation
 import PokemonFeed
 
-func uniqueDeck(name: String = "Test Deck", update: Date = Date(), cards:[SaveCard] = []) -> Deck {
+func uniqueDeck(id:String = "", name: String = "Test Deck", update: Date = Date(), cards:[SaveCard] = []) -> Deck {
      Deck(
+        id: id,
         name: name,
         update: update,
         cards: cards

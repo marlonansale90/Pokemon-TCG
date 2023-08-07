@@ -183,6 +183,7 @@
 		A9313C3A299D4CD80006602D /* DeckDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */; };
 		A93E49D4299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93E49D3299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift */; };
 		A94889C129955015008929E5 /* DeckNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94889C029955015008929E5 /* DeckNewView.swift */; };
+		A951BCF12A81065E002136B3 /* SearchCardsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951BCF02A81065E002136B3 /* SearchCardsPresenterTests.swift */; };
 		A96194A8299A98CB0041A94D /* DeckNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194A7299A98CB0041A94D /* DeckNewViewController.swift */; };
 		A96194AC299AA58A0041A94D /* LocalCard+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */; };
 /* End PBXBuildFile section */
@@ -386,6 +387,7 @@
 		A9313C39299D4CD80006602D /* DeckDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDetailPresenter.swift; sourceTree = "<group>"; };
 		A93E49D3299F78C100FC93EE /* CoreDataStore+SaveCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStore+SaveCardStore.swift"; sourceTree = "<group>"; };
 		A94889C029955015008929E5 /* DeckNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewView.swift; sourceTree = "<group>"; };
+		A951BCF02A81065E002136B3 /* SearchCardsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsPresenterTests.swift; sourceTree = "<group>"; };
 		A96194A7299A98CB0041A94D /* DeckNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNewViewController.swift; sourceTree = "<group>"; };
 		A96194AB299AA58A0041A94D /* LocalCard+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalCard+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -788,6 +790,7 @@
 		8EA9B91329648B36005E6080 /* PokemonFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				A951BCED2A810380002136B3 /* SearchCards */,
 				8EB567F6298C8C040004746B /* Decks */,
 				8E0A6CFD2966091900F79B35 /* Cards */,
 				8EA9B9A62964DFCA005E6080 /* Helpers */,
@@ -1506,6 +1509,30 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A951BCED2A810380002136B3 /* SearchCards */ = {
+			isa = PBXGroup;
+			children = (
+				A951BCEF2A81064D002136B3 /* Presentation */,
+				A951BCEE2A810452002136B3 /* API */,
+			);
+			path = SearchCards;
+			sourceTree = "<group>";
+		};
+		A951BCEE2A810452002136B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A951BCEF2A81064D002136B3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A951BCF02A81065E002136B3 /* SearchCardsPresenterTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		A96194AA299AA56F0041A94D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1824,6 +1851,7 @@
 				8EFE7B9A296A1631003AF320 /* LoadImageDataFromCacheUseCaseTests.swift in Sources */,
 				8E0678C829719FDC00E71A2B /* LoadCardFromCacheUseCaseTests.swift in Sources */,
 				8E0678CA2971D01800E71A2B /* CardCache+TestHelpers.swift in Sources */,
+				A951BCF12A81065E002136B3 /* SearchCardsPresenterTests.swift in Sources */,
 				8E0A6D0A29662DCC00F79B35 /* CardEndPointTests.swift in Sources */,
 				8EA9B9B02964E654005E6080 /* BoosterSetPresenterTests.swift in Sources */,
 				8EFE7BA8296B7B46003AF320 /* CacheImageDataUseCaseTests.swift in Sources */,
